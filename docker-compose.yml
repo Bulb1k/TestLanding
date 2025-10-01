@@ -1,0 +1,12 @@
+services:
+  tgbot:
+    build:
+      context: bot
+      dockerfile: Dockerfile
+    env_file:
+      - ./bot/.env
+    volumes:
+      - ./bot:/bot
+    ports:
+      - "8080:8080"
+    restart: always
