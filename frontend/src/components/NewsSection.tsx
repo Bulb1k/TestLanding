@@ -19,22 +19,22 @@ const NewsCard = ({image, title, description}: { image: string; title: string; d
 const NewsSection = () => {
     const cards = [
         {
-            image: "./investor-protection-img/img-1.png",
+            image: "./news-section-img/image.png",
             title: "ESMA закрыла незаконную криптобиржу, работавшую в Чехии: ",
             description: "Платформа действовала без лицензии и нарушала нормативы ЕС. Регулятор передал информацию в компетентные органы для возврата активов пострадавшим."
         },
         {
-            image: "./investor-protection-img/img-1.png",
+            image: "./news-section-img/image-1.png",
             title: "ESMA раскрыла деятельность мошеннической платформы в Украине:",
             description: "Нелегальный брокер был заблокирован, а деятельность прекращена. Пострадавшим инвесторам инициирована процедура возврата средств. Первые 2000 людей уже вернули свои средства благодаря ESMA."
         },
         {
-            image: "./investor-protection-img/img-1.png",
+            image: "./news-section-img/image-2.png",
             title: "ESMA выявила международную сеть инвестиционного мошенничества:",
             description: "В результате совместных действий с национальными регуляторами и плотным сотрудничеством киберполиций стран Европы , удалось заблокировать счета и вернуть более 4,5 млн евро инвесторам."
         },
         {
-            image: "./investor-protection-img/img-1.png",
+            image: "./news-section-img/image-3.png",
             title: "ESMA прекратила деятельность ряда нелицензированных брокеров в ЕС",
             description: "Регулятор пресёк деятельность, нарушавшую права инвесторов, и инициировал возврат более 4 500 000 евро. Сотни инвесторов уже начали получать компенсации благодаря координации действий ESMA."
         }
@@ -42,7 +42,7 @@ const NewsSection = () => {
 
     return (
         <section className="relative mt-10 mb-20 w-full">
-            <div className="container relative z-20 p-10">
+            <div className="container relative z-20 py-10">
                 <div className="block sm:hidden">
                     <CardSlider itemsPerSlide={{ mobile: 1, tablet: 2, desktop: 2 }}>
                         {cards.map((card, index) => (

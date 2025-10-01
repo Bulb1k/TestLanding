@@ -49,7 +49,7 @@ const TrustSection = () => {
 
     return (
         <section className="relative my-10 w-full bg-gray-100">
-            <div className="container relative z-20 p-10">
+            <div className="container relative z-20 py-10">
                 <h1 className="text-primary uppercase text-2xl sm:text-5xl border-b-2 border-gray-300 pb-5 mb-10">
                     Почему нам доверяют инвесторы в Европе?
                 </h1>

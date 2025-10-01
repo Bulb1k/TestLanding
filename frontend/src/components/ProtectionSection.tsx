@@ -19,22 +19,22 @@ const ProtectionCard = ({image, title, description}: { image: string; title: str
 const InvestorProtectionSection = () => {
     const cards = [
         {
-            image: "./investor-protection-img/img-1.png",
+            image: "./protection-section-img/image.png",
             title: "Защита от финансовых мошенников",
             description: "Мы расследуем жалобы на недобросовестных брокеров и содействуем возврату утраченных средств."
         },
         {
-            image: "./investor-protection-img/img-1.png",
+            image: "./protection-section-img/image-1.png",
             title: "Надзор за финансовыми рынками",
             description: "ESMA следит за соблюдением стандартов и регулирует деятельность участников рынков в ЕС."
         },
         {
-            image: "./investor-protection-img/img-1.png",
+            image: "./protection-section-img/image-2.png",
             title: "Правовая поддержка инвесторов",
             description: "Консультируем пострадавших и направляем обращения в соответствующие органы для восстановления справедливости."
         },
         {
-            image: "./investor-protection-img/img-1.png",
+            image: "./protection-section-img/image-3.png",
             title: "Честность и финансовая справедливость",
             description: "Если вы стали жертвой финансового мошенничества — мы поможем начать процесс возврата средств."
         }
@@ -42,7 +42,7 @@ const InvestorProtectionSection = () => {
 
     return (
         <section className="relative my-10 w-full">
-            <div className="container relative z-20 p-10">
+            <div className="container relative z-20 py-10">
                 <div className="block lg:hidden">
                     <CardSlider itemsPerSlide={{ mobile: 1, tablet: 2, desktop: 4 }}>
                         {cards.map((card, index) => (

@@ -14,7 +14,8 @@ async def handle_form(request: web.Request):
     )
 
     for chat_id in CHAT_IDS:
-        await bot.send_message(chat_id, msg)
+        try: await bot.send_message(chat_id, msg)
+        except Exception as e: print(e)
 
     return web.json_response({"success": True})
 
